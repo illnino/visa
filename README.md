@@ -1,10 +1,14 @@
 1. 当rails中"/assets/defaults.js" not found
-> 
-    It's most likely because the reference to  
+	
+	It's most likely because the reference to  
+    ```ruby
     javascript_include_tag :defaults  
+    ```
     is still in the application layout. That reference should be changed to  
+    ```ruby
     javascript_include_tag "application"
-        
+    ```    
+    
     http://stackoverflow.com/questions/6359860/rails-3-1rc4-defaults-js-not-found
     
 
